@@ -1,0 +1,179 @@
+/* Barra de navegación */
+.navbar_event_conference {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f3c88; /* Azul oscuro */
+    padding: 15px 30px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.company_logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fca311; /* Color dorado/naranja */
+}
+
+.left_navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav_links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.nav_links a:hover {
+    text-decoration: underline;
+}
+
+.details_button {
+    background-color: #fca311;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Contenedor principal */
+.main_container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.section-heading {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #1f3c88;
+}
+
+/* Grid para las tarjetas (Venue y Addons) */
+.venue_selection_items, .addon_selection_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilo de las tarjetas individuales */
+.venue_main_container, .addon_main_container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.venue_text_area, .addon_text_area {
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.venue_name, .addon_name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.venue_cost, .addon_cost {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Botones de incremento y decremento */
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-warning {
+    background-color: #e74c3c; /* Rojo para decrementar */
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-success {
+    background-color: #2ecc71; /* Verde para incrementar */
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.selected_count {
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 20px;
+}
+
+/* Subtotales */
+.subtotal_display {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #1f3c88;
+}
+
+.total_cost_display {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+
+/* Tabla de detalles (Popup) */
+.table_item_data {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table_item_data th, .table_item_data td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table_item_data th {
+    background-color: #1f3c88;
+    color: white;
+}
